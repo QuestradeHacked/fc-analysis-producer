@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  pubsub-emulator:
+    image: gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+    container_name: analysis-producer-pubsub-emulator
+    volumes:
+      - ${TEMP}/${PUBSUB_DIR}:/mnt/data/pubsub
+    ports:
+      - "${PUBSUB_PORT}:${PUBSUB_PORT}"
+    command: /bin/bash -c
+      "gcloud config set project emulator && gcloud beta emulators pubsub start --data-dir /mnt/data/pubsub --host-port 0.0.0.0:${PUBSUB_PORT}"

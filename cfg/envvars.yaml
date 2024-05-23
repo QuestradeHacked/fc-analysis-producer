@@ -1,0 +1,54 @@
+environment_variables:
+  ASPNETCORE_ENVIRONMENT: $(ENV)
+  ASPNETCORE_URLS: "http://*:8080"
+
+  Serilog__MinimumLevel: "Information"
+
+  DataDog__StatsD__HostName: $(DD_AGENT_HOST)
+  DataDog__StatsD__Prefix: fincrime.analysis_producer
+  DataDog__StatsD__IsEnabled: true
+  DD_LOG_LEVEL: debug
+
+  # Global log configuration
+  Logging__IncludeScopes: "true"
+  Serilog__MinimumLevel__Default: "Information"
+
+  # Microsoft log level overrides
+  Serilog__MinimumLevel__Override__System: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.Hosting.Lifetime: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Mvc: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Authentication: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Identity: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Session.SessionMiddleware: "Error"
+
+  # Serilog sinks (outputs) and configuration
+  Serilog__WriteTo__0__Name: "Console"
+  Serilog__WriteTo__0__Args__formatter: "Serilog.Formatting.Json.JsonFormatter"
+
+  # Serilog log enriching - to be reviewed with Production Support on what is useful and what can be dropped
+  Serilog__Enrich__0: "FromLogContext"
+  Serilog__Enrich__1: "WithMachineName"
+  Serilog__Enrich__2: "WithThreadId"
+  Serilog__Enrich__3: "WithExceptionDetails"
+
+  # FC Analysis Producer
+  AnalysisProducer__AnalysisProducerSubscriberConfiguration__Enable: true
+  AnalysisProducer__AnalysisProducerSubscriberConfiguration__ProjectId: $(PROJECT)
+  AnalysisProducer__AnalysisProducerSubscriberConfiguration__SubscriptionId: cloud-storage.fin-crime.analysis-producer.created-1.0.$(ENV).fc-analysis-producer
+
+  # Analysis Producer Cloud Storage
+  AnalysisProducer__CloudStorageConfiguration__Resilience__RetryCount: 1
+  AnalysisProducer__CloudStorageConfiguration__Resilience__ConsecutiveExceptionsAllowedBeforeBreaking: 3
+  AnalysisProducer__CloudStorageConfiguration__Resilience__DurationOfBreakInSeconds: 15
+
+  # Orchestrator email intelligence publisher
+  AnalysisProducer__EmailIntelligencePublisherConfiguration__Enable: true
+  AnalysisProducer__EmailIntelligencePublisherConfiguration__MaximumMessagePublishAttempts: 10
+  AnalysisProducer__EmailIntelligencePublisherConfiguration__ProjectId: $(PROJECT)
+  AnalysisProducer__EmailIntelligencePublisherConfiguration__TopicId: system.financial-crime.internal-email.scan-1.0.$(ENV)
+
+  #Feature Toggle
+  FeatureManagement__PublishEmailIntelligenceEventsFeature: true
+

@@ -1,0 +1,12 @@
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/bin/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.deps.json
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/bin/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.dll
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/bin/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.pdb
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.csproj.AssemblyReference.cache
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.AssemblyInfoInputs.cache
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.AssemblyInfo.cs
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.csproj.CoreCompileInputs.cache
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.dll
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/refint/Questrade.FinCrime.Analysis.Producer.Domain.dll
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/Questrade.FinCrime.Analysis.Producer.Domain.pdb
+/Users/015756/Documents/Projects/fc-analysis-producer/src/Questrade.FinCrime.Analysis.Producer.Domain/obj/Debug/net6.0/ref/Questrade.FinCrime.Analysis.Producer.Domain.dll

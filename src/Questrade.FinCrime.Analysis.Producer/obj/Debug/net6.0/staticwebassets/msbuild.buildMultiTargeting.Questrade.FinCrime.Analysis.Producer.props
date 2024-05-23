@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Questrade.FinCrime.Analysis.Producer.props" />
+</Project>

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="11.7.1" />
+        <PackageReference Include="GraphQL" Version="7.6.1"/>
+        <PackageReference Include="Google.Cloud.Storage.V1" Version="4.6.0"/>
+        <PackageReference Include="Polly" Version="8.0.0-beta.1"/>
+        <PackageReference Include="GraphQL.Client" Version="6.0.0"/>
+        <PackageReference Include="Graphql.DynamicFilter" Version="1.0.11"/>
+        <PackageReference Include="MediatR" Version="10.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2"/>
+        <PackageReference Include="Questrade.Library.PubSubClientHelper" Version="3.0.0"/>
+        <PackageReference Include="SerilogTimings" Version="3.0.2-dev-00041"/>
+        <PackageReference Include="System.Net.Http" Version="4.3.4"/>
+        <PackageReference Include="System.Text.Encodings.Web" Version="8.0.0-preview.7.23375.6"/>
+        <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1"/>
+        <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Questrade.FinCrime.Analysis.Producer.Domain\Questrade.FinCrime.Analysis.Producer.Domain.csproj"/>
+    </ItemGroup>
+
+</Project>

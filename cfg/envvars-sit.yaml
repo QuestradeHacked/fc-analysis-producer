@@ -1,0 +1,6 @@
+environment_variables:
+  # Global log configuration
+  Logging__IncludeScopes: "true"
+  Serilog__MinimumLevel__Default: "Debug"
+  # CRM
+  Crm__Endpoint: "https://customer-master-data.sit.q3.questech.io/graphql"

@@ -1,0 +1,37 @@
+service_name: fc-analysis-producer
+stack: dotnetcore
+owner: tmj
+
+notification_channels:
+  - customer-lifecycle-devops
+
+notification_emails:
+  - "questrade-scrumteam-tmj@questrade.com"
+
+release_managers:
+  users:
+    - dmohan@questrade.com
+    - igtanure@questrade.com
+    - jhasse@questrade.com
+    - lrogerio@questrade.com
+    - spotasio@questrade.com
+    - wantunes@questrade.com
+
+business_line:
+  name: enterprise
+  product: financial-crime
+  domain: financial-crime
+
+cloudstorage:
+  enabled: true
+  env:
+    sit:
+      name: "fc-analysis-producer-storage-sit"
+      access:
+        admin:
+          - group:questrade-scrumteam-tmj@questrade.com
+
+  notifications:
+    - topic_name: "cloud-storage.fin-crime.analysis-producer.created-1.0"
+      event_types:
+        - "OBJECT_FINALIZE"

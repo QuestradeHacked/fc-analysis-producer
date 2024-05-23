@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0CAEFBBF-2131-4E55-B18B-EA4D88F501ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questrade.FinCrime.Analysis.Producer", "src\Questrade.FinCrime.Analysis.Producer\Questrade.FinCrime.Analysis.Producer.csproj", "{036E4CA3-4472-4490-BD1C-2A9EDD668D44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questrade.FinCrime.Analysis.Producer.Application", "src\Questrade.FinCrime.Analysis.Producer.Application\Questrade.FinCrime.Analysis.Producer.Application.csproj", "{4D9608EB-F702-4AF5-8BE1-1DA8D877F8D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questrade.FinCrime.Analysis.Producer.Domain", "src\Questrade.FinCrime.Analysis.Producer.Domain\Questrade.FinCrime.Analysis.Producer.Domain.csproj", "{7CFB228A-3588-462C-B65E-AF2744AABAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questrade.FinCrime.Analysis.Producer.Infra", "src\Questrade.FinCrime.Analysis.Producer.Infra\Questrade.FinCrime.Analysis.Producer.Infra.csproj", "{FE329D7D-C46B-45DE-A7A1-52521B6F04EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questrade.FinCrime.Analysis.Producer.Tests.Integration", "src\Questrade.FinCrime.Analysis.Producer.Tests.Integration\Questrade.FinCrime.Analysis.Producer.Tests.Integration.csproj", "{D4FCD8C5-84AC-4498-99CB-8806AC73A638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questrade.FinCrime.Analysis.Producer.Tests.Unit", "src\Questrade.FinCrime.Analysis.Producer.Tests.Unit\Questrade.FinCrime.Analysis.Producer.Tests.Unit.csproj", "{B41FE812-02B1-4C7F-8F23-93760E76531D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution itens", "Solution itens", "{46BB08AC-DDC3-41BA-849E-1EA3E834B7F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{446A442C-A0C6-4768-89B6-361D29847F47}"
+	ProjectSection(SolutionItems) = preProject
+		cfg\envvars.yaml = cfg\envvars.yaml
+		cfg\envvars-prod.yaml = cfg\envvars-prod.yaml
+		cfg\envvars-sit.yaml = cfg\envvars-sit.yaml
+		cfg\envvars-uat.yaml = cfg\envvars-uat.yaml
+		cfg\paas.config.yaml = cfg\paas.config.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{731C71F1-EE9D-4CAC-9876-8C98D139C385}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{1CE7EFE1-378C-423C-99C5-C90A4A628CDC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{036E4CA3-4472-4490-BD1C-2A9EDD668D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036E4CA3-4472-4490-BD1C-2A9EDD668D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036E4CA3-4472-4490-BD1C-2A9EDD668D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036E4CA3-4472-4490-BD1C-2A9EDD668D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9608EB-F702-4AF5-8BE1-1DA8D877F8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9608EB-F702-4AF5-8BE1-1DA8D877F8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9608EB-F702-4AF5-8BE1-1DA8D877F8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9608EB-F702-4AF5-8BE1-1DA8D877F8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFB228A-3588-462C-B65E-AF2744AABAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFB228A-3588-462C-B65E-AF2744AABAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFB228A-3588-462C-B65E-AF2744AABAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFB228A-3588-462C-B65E-AF2744AABAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE329D7D-C46B-45DE-A7A1-52521B6F04EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE329D7D-C46B-45DE-A7A1-52521B6F04EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE329D7D-C46B-45DE-A7A1-52521B6F04EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE329D7D-C46B-45DE-A7A1-52521B6F04EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4FCD8C5-84AC-4498-99CB-8806AC73A638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4FCD8C5-84AC-4498-99CB-8806AC73A638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4FCD8C5-84AC-4498-99CB-8806AC73A638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4FCD8C5-84AC-4498-99CB-8806AC73A638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41FE812-02B1-4C7F-8F23-93760E76531D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41FE812-02B1-4C7F-8F23-93760E76531D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41FE812-02B1-4C7F-8F23-93760E76531D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41FE812-02B1-4C7F-8F23-93760E76531D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{036E4CA3-4472-4490-BD1C-2A9EDD668D44} = {0CAEFBBF-2131-4E55-B18B-EA4D88F501ED}
+		{4D9608EB-F702-4AF5-8BE1-1DA8D877F8D6} = {0CAEFBBF-2131-4E55-B18B-EA4D88F501ED}
+		{7CFB228A-3588-462C-B65E-AF2744AABAC6} = {0CAEFBBF-2131-4E55-B18B-EA4D88F501ED}
+		{FE329D7D-C46B-45DE-A7A1-52521B6F04EF} = {0CAEFBBF-2131-4E55-B18B-EA4D88F501ED}
+		{D4FCD8C5-84AC-4498-99CB-8806AC73A638} = {0CAEFBBF-2131-4E55-B18B-EA4D88F501ED}
+		{B41FE812-02B1-4C7F-8F23-93760E76531D} = {0CAEFBBF-2131-4E55-B18B-EA4D88F501ED}
+		{446A442C-A0C6-4768-89B6-361D29847F47} = {46BB08AC-DDC3-41BA-849E-1EA3E834B7F0}
+		{731C71F1-EE9D-4CAC-9876-8C98D139C385} = {46BB08AC-DDC3-41BA-849E-1EA3E834B7F0}
+		{1CE7EFE1-378C-423C-99C5-C90A4A628CDC} = {46BB08AC-DDC3-41BA-849E-1EA3E834B7F0}
+	EndGlobalSection
+EndGlobal

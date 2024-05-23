@@ -1,0 +1,17 @@
+environment_variables:
+
+  #Datadog config
+  DD_LOG_LEVEL: info
+
+  # Global log configuration
+  Serilog__MinimumLevel__Default: "Warning"
+
+  # PubSub
+  AnalysisProducer__AnalysisProducerSubscriberConfiguration__SubscriptionId: cloud-storage.fin-crime.analysis-producer.created-1.0.fc-analysis-producer
+  AnalysisProducer__EmailIntelligencePublisherConfiguration__TopicId: system.financial-crime.internal-email.scan-1.0
+
+  # CRM
+  Crm__Endpoint: "https://cmdp.svc.questrade.com/graphql"
+
+  #Feature Toggle
+  FeatureManagement__PublishEmailIntelligenceEventsFeature: true

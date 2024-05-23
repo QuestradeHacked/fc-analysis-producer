@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bJp/nsFDwKDZLAcfXxx6BWEfzF3OPYAivorg7ga6RX0=",
+  "Source": "Questrade.FinCrime.Analysis.Producer",
+  "BasePath": "_content/Questrade.FinCrime.Analysis.Producer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
